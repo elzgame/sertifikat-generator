@@ -7,18 +7,15 @@ require_once("dompdf/dompdf_config.inc.php");
 
 $html = ""; 
 
-$hasil ="<html><head>
-    <title> Hasil Sertifikat </title>
-    <link href='css/bootstrap.min.css' rel='stylesheet'>
-    <link rel='stylesheet' href='css/sertifikat.css'>
-</head>
-
-<body style='border: 5px solid black'>
+$hasil ="<html><head><title> Hasil Sertifikat </title>
+    <link href='/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/css/sertifikat.css'>
+</head><body style='border: 5px solid black'>
     <div class='card p-3 bg-white'>
         <div class='card-body bg-white' style='background-color: #e5e5f7; opacity: 1; background-size: 10px 10px;background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 100%);border: 2px solid black; border-radius: 10pxs;'>
             <div style='position: absolute; width: 93%'>
-                <img src='img/logo-pnc.png' alt='' style='float:right;max-width: 75px; max-height:75px; margin-left: 30px;'>
-                <img src='img/logo.png' alt='' style='float:right;max-width: 75px; max-height:75px; margin-left: 30px;'>
+                <img src='../img/logo-pnc.png' alt='' style='float:right;max-width: 75px; max-height:75px; margin-left: 30px;'>
+                <img src='../img/logo.png' alt='' style='float:right;max-width: 75px; max-height:75px; margin-left: 30px;'>
             </div>
             <center class='mt-5'>
                 <h4> KEMENTRIAN PENDIDIKAN DAN KEBUDAYAAN </h4>
@@ -39,12 +36,12 @@ $hasil ="<html><head>
             <center>
                 <div class='row'>
                     <div class='col-lg-6'>
-                        <img src='img/ttd.png' alt='' style='max-width: 150px; max-height:150px;'>
+                        <img src='../img/ttd.png' alt='' style='max-width: 150px; max-height:150px;'>
                         <h6> <u> Dr. Uzumaki Naruto </u></h6>
                         <p> <i> Direktur Kepala Konoha </i></p>
                     </div>
                     <div class='col-lg-6'>
-                        <img src='img/ttd2.png' alt='' style='max-width: 150px; max-height:150px;'>
+                        <img src='../img/ttd2.png' alt='' style='max-width: 150px; max-height:150px;'>
                         <h6> <u> Dr. Uchiha Sasuke </u> </h6>
                         <p> <i> Direktur Kepala Konoha Bagian Utara </i></p>
                     </div>
