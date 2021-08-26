@@ -42,14 +42,14 @@ background-size: 10px 10px;">
     <form action="proses-tambah-sertifikat.php" method="GET" class="mt-3">
 
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Masukkan nama..." name="nama" style="border: 3px solid black;">
+        <input required type="text" class="form-control" placeholder="Masukkan nama..." name="nama" style="border: 3px solid black;">
       </div>
 
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Masukkan nomor sertifikat..." name="nomor_sertifikat" style="border: 3px solid black;">
+        <input required type="text" class="form-control" placeholder="Masukkan nomor sertifikat..." name="nomor_sertifikat" style="border: 3px solid black;">
       </div>
 
-      <select class="form-select mb-3" name="sebagai" style="border: 3px solid black;">
+      <select required class="form-select mb-3" name="sebagai" style="border: 3px solid black;">
         <option selected>Pilih sertifikat sebagai...</option>
         <option value="Peserta">Peserta</option>
         <option value="Pengajar">Pengajar</option>
@@ -58,11 +58,11 @@ background-size: 10px 10px;">
       </select>
 
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Masukkan tema..." name="tema" style="border: 3px solid black;">
+        <input required type="text" class="form-control" placeholder="Masukkan tema..." name="tema" style="border: 3px solid black;">
       </div>
 
 
-      <input type="submit" class="btn btn-primary text-white p-4 mt-4" value="TAMBAH!" style="font-family: 'Staatliches', cursive;font-size: 30px; border-radius: 30px; border: 5px solid black">
+      <input required type="submit" class="btn btn-primary text-white p-4 mt-4" value="TAMBAH!" style="font-family: 'Staatliches', cursive;font-size: 30px; border-radius: 30px; border: 5px solid black">
 
     </form>
 

@@ -58,11 +58,11 @@ background-size: 7px 7px;">
                             <td><?= $sertifikat_data["nomor_sertifikat"] ?></td>
                             <td><?= $sertifikat_data["sebagai"] ?></td>
                             <td><?= $sertifikat_data["tema"] ?></td>
-                            <td> <a href="edit-sertifikat.php?id=<?= $sertifikat_data["id"] ?>" class="btn btn-warning text-white" style="border: 3px solid black;"> <b> Edit </b> </a> <a onclick="return confirm('Apakah anda ingin menghapus sertifikat dengan nama\n<?= $sertifikat_data["nama"]; ?>?')" href="hapus-sertifikat.php?id=<?= $sertifikat_data["id"]   ?>" class="btn btn-danger text-white" style="border: 3px solid black;"> <b> Hapus </b> </a> </td>
+                            <td> <a href="hasil-sertifikat.php?nama=<?= $sertifikat_data["nama"] ?>&nomor_sertifikat=<?= $sertifikat_data["nomor_sertifikat"] ?>&sebagai=<?= $sertifikat_data["sebagai"] ?>&tema=<?= $sertifikat_data["tema"] ?>" class="btn btn-success text-white" style="border: 3px solid black;"> <b> Cetak </b> </a> <a href="edit-sertifikat.php?id=<?= $sertifikat_data["id"] ?>" class="btn btn-warning text-white" style="border: 3px solid black;"> <b> Edit </b> </a> <a onclick="return confirm('Apakah anda ingin menghapus sertifikat dengan nama\n<?= $sertifikat_data["nama"]; ?>?')" href="hapus-sertifikat.php?id=<?= $sertifikat_data["id"]   ?>" class="btn btn-danger text-white" style="border: 3px solid black;"> <b> Hapus </b> </a> </td>
                         </tr>
-                <?php 
-                $no++;    
-                endwhile;
+                <?php
+                        $no++;
+                    endwhile;
                 } else {
                     echo "<tr><td colspan=10> Tidak ada data </td></tr>";
                 }

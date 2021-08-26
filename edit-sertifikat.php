@@ -52,14 +52,14 @@ background-size: 10px 10px;">
     <form action="proses-edit-sertifikat.php" method="GET" class="mt-3">
 
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Masukkan nama..." name="nama" style="border: 3px solid black;" value="<?= $result["nama"] ?>">
+        <input required type="text" class="form-control" placeholder="Masukkan nama..." name="nama" style="border: 3px solid black;" value="<?= $result["nama"] ?>">
       </div>
 
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Masukkan nomor sertifikat..." value="<?= $result["nomor_sertifikat"] ?>" name="nomor_sertifikat" style="border: 3px solid black;">
+        <input required type="text" class="form-control" placeholder="Masukkan nomor sertifikat..." value="<?= $result["nomor_sertifikat"] ?>" name="nomor_sertifikat" style="border: 3px solid black;">
       </div>
 
-      <select class="form-select mb-3" name="sebagai" style="border: 3px solid black;" id="sebagai">
+      <select required class="form-select mb-3" name="sebagai" style="border: 3px solid black;" id="sebagai">
         <option selected>Pilih sertifikat sebagai...</option>
         <option value="Peserta">Peserta</option>
         <option value="Pengajar">Pengajar</option>
@@ -68,13 +68,13 @@ background-size: 10px 10px;">
       </select>
 
       <div class="input-group mb-3">
-        <input type="text" value="<?= $result["tema"] ?>" class="form-control" placeholder="Masukkan tema..." name="tema" style="border: 3px solid black;">
+        <input required type="text" value="<?= $result["tema"] ?>" class="form-control" placeholder="Masukkan tema..." name="tema" style="border: 3px solid black;">
       </div>
 
-      <input type="hidden" value="<?= $result["id"] ?>" name="id">
+      <input  type="hidden" value="<?= $result["id"] ?>" name="id">
 
 
-      <input type="submit" class="btn btn-warning text-white p-4 mt-4" value="EDIT!" style="font-family: 'Staatliches', cursive;font-size: 30px; border-radius: 30px; border: 5px solid black;">
+      <input required type="submit" class="btn btn-warning text-white p-4 mt-4" value="EDIT!" style="font-family: 'Staatliches', cursive;font-size: 30px; border-radius: 30px; border: 5px solid black;">
 
     </form>
 
