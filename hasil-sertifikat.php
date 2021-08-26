@@ -16,7 +16,7 @@ if (($nama == null || "") || ($nomor_sertifikat == null || "") || ($sebagai == n
 <head>
     <title> Hasil Sertifikat </title>
     <script src="html2canvas.min.js"> </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="icon.png" type="image/png">
 
     <style>
@@ -24,16 +24,30 @@ if (($nama == null || "") || ($nomor_sertifikat == null || "") || ($sebagai == n
         @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+        .float {
+            position: fixed;
+            width: 600px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #0C9;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+        }
     </style>
     <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 
-<body style="border: 5px solid black" style="display:none;">
+<body style="border: 5px solid black">
     <center>
-        <button onclick="return capture()" style="font-size:20px; border-radius: 30px; margin-top:30px; border: 5px solid black;" class="text-white btn btn-primary mb-3"> <i class="fas fa-download"></i> Download Sertifikat (.png) </button>
+        <button onclick="return capture()" style="font-size:20px; border-radius: 30px; margin-top:30px; border: 5px solid black;" class="text-white btn btn-primary mb-3"> <i class="fas fa-download"></i> Generate sebagai gambar... (.png) </button>
     </center>
     <div class="card p-3 bg-white" id="capture">
-        <div class="card-body" style="background-color: #e5e5f7; opacity: 1; background-size: 10px 10px;background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 100%);border: 2px solid black; border-radius: 10pxs;">
+        <div class="card-body" style="   background:url(bg.png) repeat;border: 2px solid black; border-radius: 10pxs;">
             <div style="position: absolute; width: 93%">
                 <img src="logo-pnc.png" alt="" style="float:right;max-width: 75px; max-height:75px; margin-left: 30px;">
                 <img src="logo.png" alt="" style="float:right;max-width: 75px; max-height:75px; margin-left: 30px;">
@@ -71,6 +85,9 @@ if (($nama == null || "") || ($nomor_sertifikat == null || "") || ($sebagai == n
 
         </div>
     </div>
+    <div class="float" style="display: none;" id="perintah">
+        <p style="margin-top: 20px; font-size:15px; font-family: 'Pacifico', cursive;"><i class="fas fa-exclamation-triangle"></i> <b> SILAHKAN KLIK KANAN PADA GAMBAR -> SAVE IMAGE AS... </b> </p>
+    </div>
 
     <script src="html2canvas.min.js"> </script>
     <script>
@@ -83,11 +100,12 @@ if (($nama == null || "") || ($nomor_sertifikat == null || "") || ($sebagai == n
                 });
                 count++;
             }
+            document.getElementById("perintah").style.display = 'block';
             updateScroll();
         }
 
         function updateScroll() {
-            window.scrollTo(0,document.body.scrollHeight);
+            window.scrollTo(0, document.body.scrollHeight);
             setInterval(updateScroll, 1);
         }
 

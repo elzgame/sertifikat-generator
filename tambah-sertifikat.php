@@ -50,7 +50,7 @@ background-size: 10px 10px;">
       </div>
 
       <select required class="form-select mb-3" name="sebagai" style="border: 3px solid black;">
-        <option selected>Pilih sertifikat sebagai...</option>
+        <option selected disabled value>Pilih sertifikat sebagai...</option>
         <option value="Peserta">Peserta</option>
         <option value="Pengajar">Pengajar</option>
         <option value="Relawan">Relawan</option>
