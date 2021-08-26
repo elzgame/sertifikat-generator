@@ -27,7 +27,7 @@ if (($nama == null || "") || ($nomor_sertifikat == null || "") || ($sebagai == n
 
 <body style="border: 5px solid black" id="capture">
     <div class="card p-3 bg-white">
-        <div class="card-body bg-white" style="background-color: #e5e5f7; opacity: 1; background-size: 10px 10px;background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 100%);border: 2px solid black; border-radius: 10pxs;">
+        <div class="card-body" style="background-color: #e5e5f7; opacity: 1; background-size: 10px 10px;background-image: repeating-linear-gradient(45deg, #444cf7 0, #444cf7 1px, #e5e5f7 0, #e5e5f7 100%);border: 2px solid black; border-radius: 10pxs;">
             <div style="position: absolute; width: 93%">
                 <img src="logo-pnc.png" alt="" style="float:right;max-width: 75px; max-height:75px; margin-left: 30px;">
                 <img src="logo.png" alt="" style="float:right;max-width: 75px; max-height:75px; margin-left: 30px;">
