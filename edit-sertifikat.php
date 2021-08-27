@@ -60,7 +60,7 @@ background-size: 10px 10px;">
       </div>
 
       <select required class="form-select mb-3" name="sebagai" style="border: 3px solid black;" id="sebagai">
-        <option selected>Pilih sertifikat sebagai...</option>
+        <option selected disabled value>Pilih sertifikat sebagai...</option>
         <option value="Peserta">Peserta</option>
         <option value="Pengajar">Pengajar</option>
         <option value="Relawan">Relawan</option>
@@ -71,7 +71,7 @@ background-size: 10px 10px;">
         <input required type="text" value="<?= $result["tema"] ?>" class="form-control" placeholder="Masukkan tema..." name="tema" style="border: 3px solid black;">
       </div>
 
-      <input  type="hidden" value="<?= $result["id"] ?>" name="id">
+      <input type="hidden" value="<?= $result["id"] ?>" name="id">
 
 
       <input required type="submit" class="btn btn-warning text-white p-4 mt-4" value="EDIT!" style="font-family: 'Staatliches', cursive;font-size: 30px; border-radius: 30px; border: 5px solid black;">
